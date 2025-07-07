@@ -1,0 +1,56 @@
+body {
+    background-color:#806c54;
+    font-family: "Inter", sans-serif;
+    color:bisque;
+}
+
+.mainDiv {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding:1%;
+}
+
+#contactLogo {
+    float: left;
+    width: 50%;
+}
+
+#contact {
+    float: right;
+    width: 50%;
+}
+
+.contactIcon {
+    width:5%;
+    height:5%;
+}
+
+.innerContact {
+    display:inline-flex;
+    height:auto;
+}
+
+#contactLogo img {
+    height:30%;
+    width:30%;
+}
+
+.innerContact img {
+    padding: 2%;
+}
+
+.innerContact p {
+    font-size:small;
+}
+
+#facebook {
+    background-color:#ffe4c4;
+    color:#806c54;
+    border-radius:15px;
+}
+
+.mainDiv iframe {
+    border-radius:20px;
+}
