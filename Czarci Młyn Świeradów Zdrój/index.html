@@ -2,6 +2,7 @@
 <html lang = "pl">
 <head>
     <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta name= "description" content = "">
 
@@ -24,50 +25,103 @@
         </nav>
     </header>
 
-    <!-- banner -->
-    <div class = "mainDiv">
-
+    <!-- slider -->
+     <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="sliderImage4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="sliderImage.png" alt="">
+            </div>
+            <div class="item">
+                <img src="sliderImage2.png" alt="">
+            </div>
+            <div class="item">
+                <img src="sliderImage3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="sliderImage1.png" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
+
+    <script src="script.js"></script>
+
+    <hr>
 
     <!-- description -->
     <div class = "mainDiv" id = "info">
-        <h1> Informacje </h1>
-        <p>
-            Czarci Młyn to popularna atrakcja turystyczna i zabytek znajdujący się w Świeradowie-Zdroju, 
-            malowniczym mieście w południowo-zachodniej Polsce. Młyn ten został zbudowany w XIX wieku 
-            i przez wiele lat pełnił funkcję tradycyjnego młyna wodnego. Jego unikalna architektura 
-            oraz bogata historia przyciągają wielu odwiedzających, którzy chcą poznać tajniki dawnego młynarstwa. 
-            Obecnie Czarci Młyn działa jako skansen, gdzie można zobaczyć oryginalne urządzenia młynarskie 
-            oraz dowiedzieć się więcej o procesie mielenia zboża. To także świetne miejsce dla rodzin z dziećmi, 
-            które mogą uczestniczyć w warsztatach i pokazach, co czyni wizytę edukacyjną i interesującą.
-        </p>
+        <h1><img src="aboutusIcon.png" height="40" width="40"/> Czym jest Czarci Młyn? </h1>
+        <div class = "textWrapper">
+            <p>
+                Czarci Młyn to popularna atrakcja turystyczna i zabytek znajdujący się w Świeradowie-Zdroju, 
+                malowniczym mieście w południowo-zachodniej Polsce. Młyn ten został zbudowany w XIX wieku 
+                i przez wiele lat pełnił funkcję tradycyjnego młyna wodnego. Jego unikalna architektura 
+                oraz bogata historia przyciągają wielu odwiedzających, którzy chcą poznać tajniki dawnego młynarstwa. 
+                Obecnie Czarci Młyn działa jako skansen, gdzie można zobaczyć oryginalne urządzenia młynarskie 
+                oraz dowiedzieć się więcej o procesie mielenia zboża. To także świetne miejsce dla rodzin z dziećmi, 
+                które mogą uczestniczyć w warsztatach i pokazach, co czyni wizytę edukacyjną i interesującą.
+            </p>
+        </div>
     </div>
 
-    <!-- photo -->
-    <div class = "mainDiv">
+    <hr>
 
+    <!-- photo -->
+    <div class = "mainDiv" id = "breakImageWrapper">
+        <img src = "breakImage.jpg" alt = "Zdjęcie">
     </div>
 
     <!-- offer -->
-    <div class = "mainDiv">
-        <h2>Nasza oferta</h2>
+    <div class = "mainDiv" id = "offer">
+        <h1>Nasza oferta</h1>
+        <div id = "innerOffer">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque ipsum, 
+                volutpat vel ante quis, porta tincidunt orci. Integer id molestie dolor, non finibus sapien.
+                Sed hendrerit ligula nibh, vel laoreet neque molestie vitae. Duis magna sapien, viverra et est vitae, 
+                dictum mattis purus. Morbi risus nibh
+            </p>
 
+
+ 
+            <img class = "offerImage" src = "background_image.png" alt = "Zdjęcie - oferta">
+            <img class = "offerImage" src = "czarci_logo.png" alt = "Zdjęcie - oferta">
+        </div>
     </div>
+
+    <hr>
 
     <!-- opening hours and prices -->
     <div class = "mainDiv">
-        <h2> Godziny otwarcia</h2>
-        <p>
-            Zapraszamy codziennie od 10.00 do 16.00, a od kwietnia Czarci Młyn czynny do 17.00. 
-            Wejście o każdej pełnej godzinie, ostatnie o 15.00 (od kwietnia o 16.00). 
-            W trakcie zwiedzania zapraszamy na degustację wypiekanego chleba, który można u nas zakupić.
-        </p>
+        <h1> Godziny otwarcia</h1>
+        <div class = "textWrapper">
+            <p>
+                Zapraszamy codziennie od 10.00 do 16.00, a od kwietnia Czarci Młyn czynny do 17.00. 
+                Wejście o każdej pełnej godzinie, ostatnie o 15.00 (od kwietnia o 16.00). 
+                W trakcie zwiedzania zapraszamy na degustację wypiekanego chleba, który można u nas zakupić.
+            </p>
+        </div>
     </div>
 
+    <hr>
+
     <!-- map -->
-    <div class = "mainDiv">
-        <h2>Jak do nas dotrzeć?</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5029.572520588261!2d15.309128892518435!3d50.92767074810746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ed483af2310cd%3A0xb8b104db4c3931c4!2sCzarci%20M%C5%82yn!5e0!3m2!1spl!2spl!4v1751821949700!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class = "mainDiv" id = "map">
+        <h1>Jak do nas dotrzeć?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5029.572520588261!2d15.309128892518435!3d50.92767074810746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ed483af2310cd%3A0xb8b104db4c3931c4!2sCzarci%20M%C5%82yn!5e0!3m2!1spl!2spl!4v1751821949700!5m2!1spl!2spl"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- contact etc. -->
@@ -98,5 +152,8 @@
             </footer>
         </div>
     </div>
+
+    <br>
+
 </body>
 </html>
