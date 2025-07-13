@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name= "description" content = "">
+
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+
+
+    <link rel = "icon" href = "Assets/czarci_logo.png">
+    <title>Czarci Młyn Świeradów Zdrój - Galeria</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <!-- header -->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo"><img src = "Assets/czarci_logo.png"></a>
+            </div>
+         </nav>
+      </header>
+
+      <br>
+
+      <!-- GALLERY-->
+       <div class = "galleryWrapper">
+            <h1><i class="ri-image-line"></i> Galeria</h1>
+            <br>
+            <div class = "galleryBox">
+                <div class = "innerGallery">
+                    <img src = "Assets/galleryImage.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage1.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage3.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage2.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage4.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage5.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage7.jpg" alt = "Zdjęcie - Galeria">
+                </div>
+
+                <div class = "innerGallery">
+                    <img src = "Assets/galleryImage8.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage9.png" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage10.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage11.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage12.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage15.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage16.jpg" alt = "Zdjęcie - Galeria">
+                </div>
+
+                <div class = "innerGallery">
+                    <img src = "Assets/galleryImage17.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage18.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage19.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage20.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage21.jpg" alt = "Zdjęcie - Galeria">
+                    <img src = "Assets/galleryImage13.jpg" alt = "Zdjęcie - Galeria">
+                </div>
+            </div>
+
+            <div class = "galleryPopup">
+                <span>&times;</span>
+                <img src = "Assets/galleryImage.jpg" alt = "Zdjęcie - Galeria">
+            </div>
+       </div>
+
+       <script>
+            document.querySelectorAll('.innerGallery img').forEach(image =>{
+                image.onclick = () => {
+                    document.querySelector('.galleryPopup').style.display = 'block';
+                    document.querySelector('.galleryPopup img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.galleryPopup span').onclick = () => {
+                document.querySelector('.galleryPopup').style.display = 'none';
+            }
+        </script>
+
+    <hr>
+
+      <!-- CONTACT. -->
+    <div class = "mainDiv">
+        <footer id = "contactLogo">
+        <img src = "Assets/czarci_logo.png" alt = "Czarci Młyn - logo">
+        </footer>
+        
+        <div id = "contact">
+            <footer class = "innerContact">
+                <p><i class="ri-map-pin-line"></i> ul. Lwówecka 5, 59-850 Świeradów Zdrój </p>
+            </footer>
+
+            <footer class = "innerContact">
+                <p><i class="ri-phone-line"></i> tel. 696-142-253  </p>
+            </footer>
+
+            <footer class = "innerContact">
+                <p><i class="ri-mail-line"></i> imk.czarcimlyn@gmail.com </p>
+            </footer>
+
+            <footer class = "innerContact" id = "facebook">      
+                <a href = "https://www.facebook.com/CzarciMlynSwieradow/?locale=pl_PL"></i><p><i class="ri-facebook-circle-fill"></i> Czarci Młyn Świeradów - Zdrój</p></a>
+            </footer>
+        </div>
+    </div>
+
+    <br>
+
+</body>
+</html>
